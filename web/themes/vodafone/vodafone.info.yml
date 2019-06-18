@@ -1,0 +1,17 @@
+name: vodafone
+description: drupal 8 vodafone theme
+type: theme
+core: 8.x
+libraries:
+  - vodafone/global-css
+  - vodafone/global-js
+  
+# stylesheets-remove:
+#   - core/themes/stable/css/views/views.module.css
+#   - core/themes/stable/css/system/components/align.module.css  
+regions:
+  primary_menu: 'Navigation'
+  header: 'Header'
+  content: 'Main content'
+  footer: 'Footer'
+  sidebar_first: 'Sidebar'

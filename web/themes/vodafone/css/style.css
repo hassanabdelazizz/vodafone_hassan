@@ -1,0 +1,222 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 1.6rem;
+}
+@font-face{
+    font-family: "vodafone";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    /* // 10px/16px = 62.5% -> 1rem = 10px */
+
+}
+
+body {
+    font-family: vodafone;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .05);
+    font-size: 1.6rem;
+
+}
+h1{
+    font-size: 8rem;
+    }
+    .description{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+ }
+
+.container {
+    width: 100vw;
+    display: grid;
+    margin: 0;
+    grid-template-rows: max-content 80vh  max-content 10vh; ;
+    grid-template-columns: repeat(12,1fr);
+}
+.feed-icon{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    grid-row:1/2;
+    background-color: white;
+    box-shadow: 0 10px 6px rgba(#000, .5);
+    height: 7rem;
+    
+}
+
+.nav_menu .logo{
+    margin-left: 8rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.nav_menu .logo a{
+color: rgb(223, 9, 9);
+font-weight: 900;
+font-size: 2rem;
+}
+.nav_menu .items {
+    align-self: stretch;
+    margin-right: 10rem;
+    display: flex;
+    
+    }
+.nav_item-1,.nav_item-2{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.nav_menu .items a{
+    margin: 0 1.5rem;
+}
+.nav_item-1:hover,.nav_item-2:hover{
+content: "";
+border-bottom: .3rem solid red;
+cursor: pointer;
+background-color: rgba(0, 0, 0, .01);
+
+}
+
+.logo img{
+    height: 5rem;
+    width: auto;
+    margin-right: 1rem;
+background-color: transparent;    
+}
+
+
+.header{
+    padding-left: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row:2/3;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,.3),rgba(0,0,0,.3)), url("/themes/vodafone/images/store2.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    color: white;
+}
+.content{
+    margin-top: 0;
+    grid-column: 1/-1;
+    grid-row:3/4;
+
+
+}
+.views-exposed-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    height: 7rem;;
+}
+.views-exposed-form .form-item{
+display: flex;
+margin: 0 3rem;
+}
+.select-wrapper{
+    margin: 0 1rem;
+}
+.js-form-item{
+    display: flex;
+    align-items: center;
+}
+.form-select{
+    font-family: vodafone;
+padding: 1rem 2rem;
+width: 18rem;
+border: none;
+}
+
+
+ #edit-submit-frontpage{
+    font-family: vodafone;
+    padding: 1rem 2rem;
+    width: 15rem;
+    border: none;
+    background-color: white;    
+    cursor: pointer;
+    
+}   
+.view-row{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px .4rem  .6rem  rgba(0, 0, 0, .05);
+    margin: 2rem auto;
+    padding: .5rem;
+
+
+}
+.view-row *{
+    margin: .5rem 0;
+    }
+.view-row img{
+    float: left;
+    margin-right: 3rem;
+    box-shadow: 0px .4rem  .6rem  rgba(0, 0, 0, .5);
+    width: 35rem;
+    height: 20rem;
+    object-fit: cover;
+
+}
+.view-row a{
+color: red;
+text-transform: uppercase;
+}
+.see-on-map a{
+    text-decoration: underline;
+}
+.footer{
+    grid-column: 1/-1;
+    grid-row:4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: black;
+    color: white;
+
+
+}
+.geolocation-map-wrapper{
+    margin: 5rem auto;
+    width: 85%;
+    box-shadow: 0px .4rem  .6rem  rgba(0, 0, 0, .1);
+
+}
+.geolocation-geocoder-address{
+    width: 30rem;
+}
+.pager__items{
+display: flex;
+float: right;
+list-style-type: none;
+list-style: none;
+margin: 5rem 15rem;
+
+}
+.pager__items li{
+margin: 0 1rem;
+}
