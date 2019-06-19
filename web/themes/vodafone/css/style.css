@@ -150,7 +150,7 @@ border: none;
 }
 
 
- #edit-submit-frontpage{
+ #edit-submit-frontpage,#edit-submit-x{
     font-family: vodafone;
     padding: 1rem 2rem;
     width: 15rem;
@@ -219,4 +219,11 @@ margin: 5rem 15rem;
 }
 .pager__items li{
 margin: 0 1rem;
+}
+.form-text{
+    font-family: vodafone;
+    padding: 1rem 2rem;
+    margin-left:2rem; 
+    width: 35rem;
+    border: none;
 }
